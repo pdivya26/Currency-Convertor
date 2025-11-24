@@ -77,8 +77,8 @@ async function convertCurrency() {
     console.log(countryList[fromC]);
     console.log(countryList[toC]);
 
-    const url = `https://v6.exchangerate-api.com/v6/21f19a5dd2390960a3f72daa/latest/${fromC}`;
-
+    const url = `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/${fromC}`;
+    
     const response = await fetch(url);
     const data = await response.json();
 
